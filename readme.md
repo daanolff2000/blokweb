@@ -64,6 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 <img src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
 
+<img src="images/breakdownsection.jpg" alt="een breakdownschets van een sectie van https://www.southparkstudios.com/">
 
 ## Intake (week 1)
 
