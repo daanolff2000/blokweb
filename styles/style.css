@@ -2,7 +2,3 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
-.screenshotssmallscreen {
-	display: flex;
-}
