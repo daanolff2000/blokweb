@@ -63,17 +63,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-
+<img src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
 
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -rood-
+**Je startniveau:** rood
 
-**Je focus:** -responsive-
+**Je focus:** responsive
 
-**Je opdracht:** -https://oege.ie.hva.nl/~olffda/ -> Internetstandaarden-
+**Je opdracht:** https://www.southparkstudios.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
