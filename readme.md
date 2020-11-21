@@ -77,6 +77,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste en tweede pagina (small screen):**
 
-<img src="images/homescreenshot.jpg" width="375px" alt="small-screen homepagina van https://www.southparkstudios.com/">
-
-<img src="images/shopscreenshot.jpg" width="375px" alt="small-screen shoppagina van https://www.southparkstudios.com/">
+<section class="screenshotssmallscreen"> 
+	<img src="images/homescreenshot.jpg" width="300px" alt="small-screen homepagina van https://www.southparkstudios.com/">
+	<img src="images/shopscreenshot.jpg" width="300px" alt="small-screen shoppagina van https://www.southparkstudios.com/">
+</section>
