@@ -8,37 +8,51 @@
 	
 	<title>South Park</title>
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900Ubuntu:400,500,700" rel="stylesheet">
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		
+		<button id="hamburgerknop">
+			<i class="fa fa-bars"></i>
+		</button>
+		<button id="logoknop">
+			<img class="logo" src="images/mainlogo.jpg" alt="Logo of South Park" width="216px">
+		</button>
+		<button id="zoekknop">
+			<i class="fa fa-search"></i>
+		</button>
 	</header>
 	<main>
+		<nav id="navigatie">
+			<ul>
+				<li>Home</li>
+				<li>Account</li>
+				<li>Full Episodes</li>
+				<li>Wiki</li>
+				<li>News</li>
+				<li>Avatars</li>
+				<li>Shop</li>
+				<li>Forum</li>
+			</ul>
+		</nav>
 		<section>
 			<h2>Full episodes</h2>
 			<article>
-				<img src="images/thanksgiving.jpeg" alt="A History Channel Thanksgiving Episode">
+				<img class="afleveringen" src="images/thanksgiving.jpg" alt="A History Channel Thanksgiving Episode">
 				<h3>S15 • E13</h3>
 				<h4>A History Channel Thanksgiving Episode</h4>
 				<p>The boys are getting close to discovering the truth about the first Thanksgiving.</p>
-				<time>11/09/2011</time>
+				<time datetime="11/09/2011">11/09/2011</time>
 			</article>
 			<article>
-				<img src="" alt="">
-				<h3></h3>
-				<h4></h4>
-				<p></p>
-				<time></time>
-			</article>
-			<article>
-				<img src="" alt="">
-				<h3></h3>
-				<h4></h4>
-				<p></p>
-				<time></time>
+				<img class="afleveringen" src="images/chefschocolate.jpg" alt="Chef's Chocolate Salty Balls">
+				<h3>S2 • E9</h3>
+				<h4>Chef's Chocolate Salty Balls</h4>
+				<p>South Park's first film festival attracts crowds of pretentious, tofu-eating movie lovers to the quiet mountain town.</p>
+				<time datetime="19/08/1998">19/08/1998</time>
 			</article>
 		</section>
 	</main>
