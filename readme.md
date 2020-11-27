@@ -43,9 +43,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-<img src="images/ss1vg">
+<img src="images/ss1vg.jpg">
 Homepage
-<img src="images/ss2vg">
+<img src="images/ss2vg.jpg">
 Hamburgermenu
 
 ### Agenda voor meeting
