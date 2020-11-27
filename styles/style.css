@@ -185,12 +185,13 @@ section h2:first-child {
 article{
 	width: 80vw;
 	margin-bottom: 20px;
+	padding-bottom: 18px;
 	text-align: left;
 }
 
 h3, h4, p, time {
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 18px;
+	padding-left: 18px;
 }
 
 img.afleveringen{
