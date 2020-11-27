@@ -33,7 +33,7 @@ article{
 }
 
 /* ------- Hamburger Menu ------- */
-#hamburgerknop{
+button#hamburgerknop{
 	width: 30px;
 	height: 30px;
 	border: 0;
@@ -43,23 +43,23 @@ article{
 	font-size: 17px;
 }
 
-#hamburgerknop:focus {
+button#hamburgerknop:focus {
 	outline: none;
 }
 
 /* ------- Logo ------- */
-#logoknop {
+button#logoknop {
 	border: 0;
 	background: transparent;
 	cursor: pointer;
 }
 
-#logoknop:focus {
+button#logoknop:focus {
 	outline: none;
 }
 
 /* ------- Zoekfunctie ------- */
-#zoekknop {
+button#zoekknop {
 	width: 30px;
 	height: 30px;
 	border: 0;
@@ -68,7 +68,7 @@ article{
 	cursor: pointer;
 }
 
-#zoekknop:focus {
+button#zoekknop:focus {
 	outline: none;
 }
 
@@ -117,6 +117,10 @@ time{
 	color: #7b7b7b;
 }
 
+a.pagina{
+	color: #ffffff;
+	text-decoration: none;
+}
 /* 	------- Posities en flex ------- */
 header{
 	position: sticky;
@@ -128,6 +132,12 @@ header{
 	padding: 0 10px;
 }
 
+img.logo{
+	width: 216px;
+	height: 19px;
+}
+
+/*navigatie*/
 nav{
 	position: fixed;
 	width: 100vw;
@@ -135,7 +145,7 @@ nav{
 	opacity: 0;
 }
 
-.actief {
+nav.actief {
 	opacity: 1;
 	transition: ease-in;
 }
@@ -144,23 +154,22 @@ ul{
 	width: 80vw;
 }
 
-li{
-	padding: 15px 0 15px 10px;
-}
-
 nav li + li{
 	border-top: 1px solid white;
 }
 
-.logo{
-	width: 216px;
-	height: 19px;
+a.pagina {
+	display: block;
+	width: 100%;
+	padding: 3vh 0 3vh 3vw;
 }
 
+/*main*/
 main {
 	display: flex;
 	flex-direction: column;
 }
+
 section{
 	min-width: 100vw;
 	display: flex;
@@ -175,22 +184,21 @@ section h2:first-child {
 
 article{
 	width: 80vw;
-	padding: 5px;
 	margin-bottom: 20px;
 	text-align: left;
 }
 
 h3, h4, p, time {
-	padding-left: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
-.afleveringen{
+img.afleveringen{
 	width: 100%;
 }
 
 /* -------Grotere schermen ------- */
 @media (min-width: 600px) {
 	body{
-		background-color: red;
 	}
 }
