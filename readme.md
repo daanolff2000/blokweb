@@ -38,21 +38,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Het zoeken naar oplossingen gaat goed. Ik moet wel meer de vaart erin gooien.-
 
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/ss1vg">
+Homepage
+<img src="images/ss2vg">
+Hamburgermenu
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
+| Dionysha       | Ashley             | Daan         | ---              |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Footer         | ---                | JS hamburger | ---              |
+| ---            | ---                | Semantiek    | ---              |
 
 ### Verslag van meeting
 
