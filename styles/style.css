@@ -4,14 +4,12 @@
   padding: 0;
   box-sizing: border-box;  
 }
-
 /* ------- Algemene opmaak ------- */
 header{
 	background-color: #181818;
 }
 
 nav{
-	background-color: rgba(0,0,0,0.7);;
 	color: #ffffff;
 }
 
@@ -73,26 +71,34 @@ button#zoekknop:focus {
 }
 
 /* 	------- Typografie ------- */
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1.8em;
+}
+
 h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	width: 100vw;
-	font-size: 36px;
+	font-size: 2em;
 }
 
 h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 1.5em;
 	margin: 12px 0;
 }
 
 h4{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 0.9em;
 	margin-bottom: 6px;
 }
 
@@ -100,20 +106,20 @@ li{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 25px;
+	font-size: 1.3em;
 }
 
 p{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.9em;
 	margin-bottom: 24px;
 }
 
 time{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 0.7em;
 	color: #7b7b7b;
 }
 
@@ -124,34 +130,30 @@ a.pagina{
 /* 	------- Posities en flex ------- */
 header{
 	position: sticky;
-	top:0;
-	height: 44px;
+	z-index: 10;
+	top: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 10px;
-}
-
-img.logo{
-	width: 216px;
-	height: 19px;
+	height: 4em;
 }
 
 /*navigatie*/
 nav{
 	position: fixed;
-	width: 100vw;
-	height: 100vh;
+	z-index: 10;
 	opacity: 0;
+	transform: translateX(-15em);
+	transition: .25s;
 }
 
-nav.actief {
-	opacity: 1;
-	transition: ease-in;
+nav.actief{
+	transform: translateX(0);
+	transition: .25s;
 }
 
 ul{
-	width: 80vw;
+	width: 90vw;
 }
 
 nav li + li{
@@ -170,6 +172,10 @@ main {
 	flex-direction: column;
 }
 
+section.donker{
+	filter: brightness(30%);
+}
+
 section{
 	min-width: 100vw;
 	display: flex;
@@ -183,21 +189,28 @@ section h2:first-child {
 }
 
 article{
-	width: 80vw;
-	margin-bottom: 20px;
-	padding-bottom: 18px;
+	width: 85vw;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
 	text-align: left;
 }
 
-h3, h4, p, time {
-	padding-right: 18px;
-	padding-left: 18px;
+h3{
+	padding-left: 1em;
+}
+
+h4, p{
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+time {
+	padding-left: 2em;
 }
 
 img.afleveringen{
 	width: 100%;
 }
-
 /* -------Grotere schermen ------- */
 @media (min-width: 600px) {
 	body{
