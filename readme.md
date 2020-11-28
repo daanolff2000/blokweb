@@ -59,7 +59,9 @@ Hamburgermenu
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-Ik ben opweg met responsive maken van de website. Er moet nog wel even gekeken worden naar fontsite (em/rem ipv px).
+Daarnaast kan filter() in css worden gebruikt om een overlay te maken. Een goed idee was om wellicht in een later 
+stadium te werken met SVG icoontjes voor de header in HTML.-
 
 
 
