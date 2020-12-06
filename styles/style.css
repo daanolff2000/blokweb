@@ -1,66 +1,113 @@
-/* ------- CSS Document ------- */
+/* ------- CSS DOCUMENT ------- */
+
 *, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-}
-/* ------- Algemene opmaak ------- */
-header{
-	background-color: #181818;
-}
-
-nav{
-	color: #ffffff;
-}
-
-ul{
-	background-color: #000000
+  margin: 0;				/* Geen default margin */
+  padding: 0;				/* Geen default padding */
+  box-sizing: border-box;  	/* Breedte en hoogte van element zijn inclusief border */
 }
 
 body{
 	background-color: rgba(0,0,0,0.5);
 }
 
-section{
-	background-color: #f8f8f8;
+header{
+	background-color: #181818;
+	position: sticky;				/* Header vastmaken aan een positie */
+	top: 0;							/* Header zit vast aan de bovenkant van de pagina */
+	z-index: 10;					/* Overlapt de reguliere content */
+	display: flex;					/* De elementen in de header worden flexibel */
+	align-items: center;
+	justify-content: space-between;
+	height: 4em;
 }
 
-article{
-	background-color: #ffffff;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-
-/* ------- Hamburger Menu ------- */
 button#hamburgerknop{
-	width: 2em;
-	height: 2em;
+	width: 2em;					/* Breedte button */
+	height: 2em;				/* Hoogte button */
 	border: 0;
 	background: transparent;
 	color: white;
 	cursor: pointer;
-	font-size: 1.5em;
+	font-size: 1.5em;			/* Grootte van het icoon */
 }
 
 button#hamburgerknop:focus {
 	outline: none;
 }
 
-/* ------- Zoekfunctie ------- */
 button#zoekknop {
-	width: 2.1em;
-	height: 2em;
+	width: 2.1em;				/* Breedte button */
+	height: 2em;				/* Hoogte button */
 	border: 0;
 	background: transparent;
 	color: white;
 	cursor: pointer;
-	font-size: 1.5em;
+	font-size: 1.5em;			/* Grootte van het icoon */
 }
 
 button#zoekknop:focus {
 	outline: none;
 }
 
-/* 	------- Typografie ------- */
+nav{
+	color: #ffffff;
+	position: fixed;					/* Plaatst de nav op een vaste plek en haalt de nav uit de parent */
+	z-index: 10;						/* Overlapt de reguliere content */
+	transform: translateX(-100vw);		/* Plaatst de navigatie naar links */
+	transition: .4s ease-out;					/* Overgang duurt 0.4 seconden */
+}
+
+ul{
+	background-color: #000000;
+	width: 90vw;
+}
+
+li{
+	text-transform: uppercase;					/* Tekst is all caps */
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 1.3em;
+}
+
+nav li + li{
+	border-top: 1px solid white;		/* Alle list-items behalve de bovenste hebben een border */
+}
+
+a.pagina{
+	color: #ffffff;
+	text-decoration: none;		/* Geen underline */
+	display: block;				/* Start op een nieuwe regel en neemt volledige breedte in */
+	width: 100%;				/* Maximale breedte binnen de parent */
+	padding: 3vh 0 3vh 3vw;
+}
+
+main {
+	display: flex;				/* De elementen in de main worden flexibel */
+	flex-direction: column;		/* De elementen worden flexibel in verticale richting */
+}
+
+section{
+	background-color: #f8f8f8;
+	min-width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+section h2:first-child {
+	margin: 1.2em auto;		/* Ruimte tussen de heading en het eerste artikel */
+}
+
+article{
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	width: 85vw;										/* Neemt 85% van de totale breedte in */
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	text-align: left;
+}
+
 h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
@@ -73,7 +120,7 @@ h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
-	width: 100vw;
+	width: 85vw;								/* in lijn met de articles */
 	font-size: 2em;
 }
 
@@ -82,28 +129,24 @@ h3{
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	margin: 12px 0;
+	margin: 0.8em 0;
+	padding-left: 1em;
 }
 
 h4{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 0.9em;
-	margin-bottom: 6px;
-}
-
-li{
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size: 1.3em;
+	margin-bottom: 0.4em;
+	padding: 0 1.5em;
 }
 
 p{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 0.9em;
-	margin-bottom: 24px;
+	margin-bottom: 1.5em;
+	padding: 0 1.5em;
 }
 
 time{
@@ -111,99 +154,29 @@ time{
 	font-weight: 400;
 	font-size: 0.7em;
 	color: #7b7b7b;
-}
-
-a.pagina{
-	color: #ffffff;
-	text-decoration: none;
-}
-/* 	------- Posities en flex ------- */
-header{
-	position: sticky;
-	z-index: 10;
-	top: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 4em;
-}
-
-/*navigatie*/
-nav{
-	position: fixed;
-	z-index: 10;
-	opacity: 0;
-	transform: translateX(-15em);
-	transition: .25s;
-}
-
-body.actief nav{
-	transform: translateX(0);
-	transition: .25s;
-	opacity: 1;
-}
-
-body.actief section{
-	filter: brightness(30%);
-	transition: .25s;
-}
-
-ul{
-	width: 90vw;
-}
-
-nav li + li{
-	border-top: 1px solid white;
-}
-
-a.pagina {
-	display: block;
-	width: 100%;
-	padding: 3vh 0 3vh 3vw;
-}
-
-/*main*/
-main {
-	display: flex;
-	flex-direction: column;
-}
-
-section{
-	min-width: 100vw;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-}
-
-section h2:first-child {
-	margin: 20px auto;
-}
-
-article{
-	width: 85vw;
-	margin-bottom: 1.5em;
-	padding-bottom: 1.5em;
-	text-align: left;
-}
-
-h3{
-	padding-left: 1em;
-}
-
-h4, p{
-	padding-right: 1.5em;
-	padding-left: 1.5em;
-}
-
-time {
 	padding-left: 2em;
 }
 
 img.afleveringen{
-	width: 100%;
+	width: 100%;		/* Breedte is maximaal binnen het artikel */
 }
-/* -------Grotere schermen ------- */
+
+
+/* 	------- NA AANROEPEN JAVASCRIPT ------- */
+
+body.actief nav{
+	transform: translateX(0);		/* Plaatst de navigatie terug in het scherm */
+	transition: .4s ease-in;				/* Overgang duurt 0.7 seconden */
+}
+
+body.actief section{
+	filter: brightness(30%);		/* Sectie wordt donkerder */
+	transition: .4s ease-in-out;				/* Overgang duurt 0.7 seconden */
+}
+
+
+/* ------- BREAKPOINT 1 ------- */
+
 @media (min-width: 50em) {
 	body{
 	}
