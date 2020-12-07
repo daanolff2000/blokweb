@@ -84,7 +84,6 @@ main {
 
 section{
 	background-color: #f8f8f8;
-	border: none;
 	min-width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
