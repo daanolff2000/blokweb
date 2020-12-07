@@ -6,10 +6,6 @@
   box-sizing: border-box;  	/* Breedte en hoogte van element zijn inclusief border */
 }
 
-body{
-	background-color: rgba(0,0,0,0.5);
-}
-
 header{
 	background-color: #181818;
 	position: sticky;				/* Header vastmaken aan een positie */
@@ -88,6 +84,7 @@ main {
 
 section{
 	background-color: #f8f8f8;
+	border: none;
 	min-width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -100,12 +97,20 @@ section h2:first-child {
 }
 
 article{
+	position: relative;
 	background-color: #ffffff;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 	width: 85vw;										/* Neemt 85% van de totale breedte in */
+	text-align: left;
+}
+
+article.afleveringen {
 	margin-bottom: 1.5em;
 	padding-bottom: 1.5em;
-	text-align: left;
+}
+
+article.collectie{
+	background-color: transparent;
 }
 
 h1{
@@ -133,6 +138,16 @@ h3{
 	padding-left: 1em;
 }
 
+h3.collectie-titel{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 4vw;
+	color: #ffffff;
+	position: absolute;
+	left: 3%;
+	top: 73%;
+}
+
 h4{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -149,7 +164,17 @@ p{
 	padding: 0 1.5em;
 }
 
-time{
+p.collectie-tekst{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 2vw;
+	color: #ffffff;
+	position: absolute;
+	left: 4.2%;
+	top: 90%;
+}
+
+time.datum{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 0.7em;
@@ -157,8 +182,48 @@ time{
 	padding-left: 2em;
 }
 
-img.afleveringen{
-	width: 100%;		/* Breedte is maximaal binnen het artikel */
+img.video{
+	max-width: 100%;		/* Breedte is maximaal binnen het artikel */
+}
+
+img.collectie-cover{
+	max-width: 100%;
+	filter: brightness(70%);
+}
+
+img#collectie-icoon{
+	width: 6vw;
+	position: absolute;
+	left: 8%;
+	top: 65%;
+}
+
+div.media-wrapper{
+	position: relative;
+	max-width: 100%;
+}
+
+div.timestamp-container{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000;
+	width: 12vw;
+	padding: 1vw;
+	bottom: 10%;
+	right: 3%;
+}
+
+img.playicon {
+	width: 2vw;
+}
+
+time.timestamp{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 3vw;
 }
 
 
