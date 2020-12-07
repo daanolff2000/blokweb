@@ -83,16 +83,17 @@ main {
 }
 
 section{
+	position: relative;
 	background-color: #f8f8f8;
-	min-width: 100vw;
+	max-width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 }
 
-section h2:first-child {
-	margin: 1.2em auto;		/* Ruimte tussen de heading en het eerste artikel */
+section h2{
+	margin: 1em auto 0.6em;		/* Ruimte tussen de heading en het eerste artikel */
 }
 
 article{
@@ -101,15 +102,15 @@ article{
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 	width: 85vw;										/* Neemt 85% van de totale breedte in */
 	text-align: left;
+		margin-bottom: 1.5em;
 }
 
-article.afleveringen {
-	margin-bottom: 1.5em;
+article.afleveringen, article.nieuwsartikel {
 	padding-bottom: 1.5em;
 }
 
 article.collectie{
-	background-color: transparent;
+	box-shadow: none;
 }
 
 h1{
@@ -125,13 +126,12 @@ h2{
 	font-weight: 900;
 	text-transform: uppercase;
 	width: 85vw;								/* in lijn met de articles */
-	font-size: 2em;
+	font-size: 8vw;
 }
 
 h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	text-transform: uppercase;
 	font-size: 1.5em;
 	margin: 0.8em 0;
 	padding-left: 1em;
@@ -181,12 +181,11 @@ time.datum{
 	padding-left: 2em;
 }
 
-img.video{
+img.video, img.nieuws, img.collectie-cover{
 	max-width: 100%;		/* Breedte is maximaal binnen het artikel */
 }
 
 img.collectie-cover{
-	max-width: 100%;
 	filter: brightness(70%);
 }
 
