@@ -1,30 +1,32 @@
 /* ------- CSS DOCUMENT ------- */
 
+/* Breedte en hoogte van element zijn inclusief border */
 *, *::after, *::before {
-  margin: 0;				/* Geen default margin */
-  padding: 0;				/* Geen default padding */
-  box-sizing: border-box;  	/* Breedte en hoogte van element zijn inclusief border */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
 
+/* 	Header vastmaken aan een positie, overlapt de reguliere content, de elementen in de header worden flexibel */
 header{
 	background-color: #181818;
-	position: sticky;				/* Header vastmaken aan een positie */
-	top: 0;							/* Header zit vast aan de bovenkant van de pagina */
-	z-index: 10;					/* Overlapt de reguliere content */
-	display: flex;					/* De elementen in de header worden flexibel */
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	display: flex;	
 	align-items: center;
 	justify-content: space-between;
 	height: 4em;
 }
 
 button#hamburgerknop{
-	width: 2em;					/* Breedte button */
-	height: 2em;				/* Hoogte button */
+	width: 2em;
+	height: 2em;
 	border: 0;
 	background: transparent;
 	color: white;
 	cursor: pointer;
-	font-size: 1.5em;			/* Grootte van het icoon */
+	font-size: 2em;
 }
 
 button#hamburgerknop:focus {
@@ -32,59 +34,62 @@ button#hamburgerknop:focus {
 }
 
 button#zoekknop {
-	width: 2.1em;				/* Breedte button */
-	height: 2em;				/* Hoogte button */
+	width: 2.1em;
+	height: 2em;
 	border: 0;
 	background: transparent;
 	color: white;
 	cursor: pointer;
-	font-size: 1.5em;			/* Grootte van het icoon */
+	font-size: 2em;
 }
 
 button#zoekknop:focus {
 	outline: none;
 }
 
+/* Navigatie staat op een vaste plek en is uit de parent gehaald */
 nav{
 	color: #ffffff;
-	position: fixed;					/* Plaatst de nav op een vaste plek en haalt de nav uit de parent */
-	z-index: 10;						/* Overlapt de reguliere content */
-	transform: translateX(-100vw);		/* Plaatst de navigatie naar links */
-	transition: .4s ease-out;					/* Overgang duurt 0.4 seconden */
+	position: fixed;		
+	z-index: 10;
+	transform: translateX(-100vw);
+	transition: .4s ease-out;
 }
 
-ul{
+ul#navlist{
 	background-color: #000000;
 	width: 90vw;
 }
 
-li{
-	text-transform: uppercase;					/* Tekst is all caps */
+ul#navlist li{
+	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	font-size: 1.3em;
 }
 
+/* Alle list-items behalve de bovenste hebben een border */
 nav li + li{
-	border-top: 1px solid white;		/* Alle list-items behalve de bovenste hebben een border */
+	border-top: 1px solid white;
 }
 
 a.pagina{
 	color: #ffffff;
-	text-decoration: none;		/* Geen underline */
-	display: block;				/* Start op een nieuwe regel en neemt volledige breedte in */
-	width: 100%;				/* Maximale breedte binnen de parent */
+	text-decoration: none;
+	display: block;
+	width: 100%;
 	padding: 3vh 0 3vh 3vw;
 }
 
+/* De elementen in de main worden flexibel in verticale richting */
 main {
-	display: flex;				/* De elementen in de main worden flexibel */
-	flex-direction: column;		/* De elementen worden flexibel in verticale richting */
+	display: flex;				
+	flex-direction: column;
 }
 
 section{
-	position: relative;
 	background-color: #f8f8f8;
+	position: relative;
 	max-width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -93,16 +98,16 @@ section{
 }
 
 section h2{
-	margin: 1em auto 0.6em;		/* Ruimte tussen de heading en het eerste artikel */
+	margin: 1em auto 0.6em;
 }
 
 article{
 	position: relative;
 	background-color: #ffffff;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-	width: 85vw;										/* Neemt 85% van de totale breedte in */
+	width: 85vw;
 	text-align: left;
-		margin-bottom: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 article.afleveringen, article.nieuwsartikel {
@@ -118,33 +123,35 @@ h1{
 	font-weight: 900;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 
 h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
-	width: 85vw;								/* in lijn met de articles */
-	font-size: 8vw;
+	width: 85vw;
+	font-size: 2em;
 }
 
 h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	margin: 0.8em 0;
-	padding-left: 1em;
+	padding: 0 1em 0 1.25em;
 }
 
+/* vw ipv em (om mooier mee te schalen met de afbeelding) */
 h3.collectie-titel{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 4vw;
+	font-size: 6vw;
 	color: #ffffff;
 	position: absolute;
-	left: 3%;
-	top: 73%;
+	padding: 0;
+	left: 7%;
+	bottom: 1%;
 }
 
 h4{
@@ -163,6 +170,7 @@ p{
 	padding: 0 1.5em;
 }
 
+/* vw ipv em (om mooier mee te schalen met de afbeelding) */
 p.collectie-tekst{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -182,7 +190,7 @@ time.datum{
 }
 
 img.video, img.nieuws, img.collectie-cover{
-	max-width: 100%;		/* Breedte is maximaal binnen het artikel */
+	max-width: 100%;
 }
 
 img.collectie-cover{
@@ -193,7 +201,7 @@ img#collectie-icoon{
 	width: 6vw;
 	position: absolute;
 	left: 8%;
-	top: 65%;
+	bottom: 30%;
 }
 
 div.media-wrapper{
@@ -217,6 +225,7 @@ img.playicon {
 	width: 2vw;
 }
 
+/* vw ipv em (om mooier mee te schalen met de afbeelding) */
 time.timestamp{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -224,17 +233,43 @@ time.timestamp{
 	font-size: 3vw;
 }
 
+section:last-of-type{
+	padding-bottom: 2.5em;
+}
+
+footer{
+	background-color: #181818;
+	padding: 2em 0;
+}
+
+ul#footerlist{
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+ul#footerlist li{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #767676;
+	font-size: 0.8em;
+	padding: 0.5em 1em;
+}
+
 
 /* 	------- NA AANROEPEN JAVASCRIPT ------- */
 
+/* Plaatst de navigatie terug in het scherm */
 body.actief nav{
-	transform: translateX(0);		/* Plaatst de navigatie terug in het scherm */
-	transition: .4s ease-in;				/* Overgang duurt 0.7 seconden */
+	transform: translateX(0);		
+	transition: .4s ease-in;
 }
 
-body.actief section{
-	filter: brightness(30%);		/* Sectie wordt donkerder */
-	transition: .4s ease-in-out;				/* Overgang duurt 0.7 seconden */
+body.actief section {
+	filter: brightness(30%);			
+	transition: .4s ease-in-out;
 }
 
 
