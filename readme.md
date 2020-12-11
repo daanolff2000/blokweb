@@ -40,25 +40,28 @@ Bovendien moet ik de tweede pagina verder uitwerken. -
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-<img class="readme" src="images/sc1vg2.png">
+<img class="readme" width="300px" src="images/sc1vg2.png">
 Homepage
-<img class="readme" src="images/sc2vg2.png">
+<img class="readme" width="300px" src="images/sc2vg2.png">
 Navigatie
-<img class="readme" src="images/sc3vg2.png">
+<img class="readme" width="300px" src="images/sc3vg2.png">
 Footer
+
+**Feedback:**
+-feedback van de docent:-
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
--Het zoeken naar oplossingen gaat goed. Ik moet wel meer de vaart erin gooien.-
+Het zoeken naar oplossingen gaat goed. Ik moet wel meer de vaart erin gooien.
 
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-<img class="readme" src="images/ss1vg.jpg">
+<img class="readme" width="300px" src="images/ss1vg.jpg">
 Homepage
-<img class="readme" src="images/ss2vg.jpg">
+<img class="readme" width="300px" src="images/ss2vg.jpg">
 Hamburgermenu
 
 ### Agenda voor meeting
@@ -72,17 +75,17 @@ Hamburgermenu
 
 ### Verslag van meeting
 
--Ik ben opweg met responsive maken van de website. Er moet nog wel even gekeken worden naar fontsite (em/rem ipv px).
+Ik ben opweg met responsive maken van de website. Er moet nog wel even gekeken worden naar fontsite (em/rem ipv px).
 Daarnaast kan filter() in css worden gebruikt om een overlay te maken. Een goed idee was om wellicht in een later 
-stadium te werken met SVG icoontjes voor de header in HTML.-
+stadium te werken met SVG icoontjes voor de header in HTML.
 
 
 
 ## Breakdownschets (week 1)
 
-<img class="readme" src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
+<img src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
 
-<img class="readme" src="images/breakdownsection.jpg" alt="een breakdownschets van een sectie van https://www.southparkstudios.com/">
+<img src="images/breakdownsection.jpg" alt="een breakdownschets van een sectie van https://www.southparkstudios.com/">
 
 ## Intake (week 1)
 
@@ -94,9 +97,9 @@ stadium te werken met SVG icoontjes voor de header in HTML.-
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img class="readme" src="images/homescreenshot.jpg" alt="small-screen homepagina van https://www.southparkstudios.com/">
+<img src="images/homescreenshot.jpg" width="300px" alt="small-screen homepagina van https://www.southparkstudios.com/">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img class="readme" src="images/shopscreenshot.jpg" alt="small-screen shoppagina van https://www.southparkstudios.com/">
+<img src="images/shopscreenshot.jpg" width="300px" alt="small-screen shoppagina van https://www.southparkstudios.com/">
 
