@@ -30,9 +30,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+- Ik heb gebruik gemaakt van een aantal divs voor de timestamps van een video. Is dit oke in verband met de semantiek?
+Ik weet namelijk niet welk ander blokelement hier beter kan worden toegepast.
 
+Nu moet de footer worden afgemaakt en het grid worden geplaatst.
+Bovendien moet ik de tweede pagina verder uitwerken. -
 
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
+<img class="readme" src="images/sc1vg2.png">
+Homepage
+<img class="readme" src="images/sc2vg2.png">
+Navigatie
+<img class="readme" src="images/sc3vg2.png">
+Footer
 
 ## Voortgang 1 (week 3)
 
@@ -43,9 +56,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-<img src="images/ss1vg.jpg">
+<img class="readme" src="images/ss1vg.jpg">
 Homepage
-<img src="images/ss2vg.jpg">
+<img class="readme" src="images/ss2vg.jpg">
 Hamburgermenu
 
 ### Agenda voor meeting
@@ -67,9 +80,9 @@ stadium te werken met SVG icoontjes voor de header in HTML.-
 
 ## Breakdownschets (week 1)
 
-<img src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
+<img class="readme" src="images/breakdownschets.jpg" alt="een breakdownschets van https://www.southparkstudios.com/">
 
-<img src="images/breakdownsection.jpg" alt="een breakdownschets van een sectie van https://www.southparkstudios.com/">
+<img class="readme" src="images/breakdownsection.jpg" alt="een breakdownschets van een sectie van https://www.southparkstudios.com/">
 
 ## Intake (week 1)
 
@@ -81,9 +94,9 @@ stadium te werken met SVG icoontjes voor de header in HTML.-
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/homescreenshot.jpg" width="300px" alt="small-screen homepagina van https://www.southparkstudios.com/">
+<img class="readme" src="images/homescreenshot.jpg" alt="small-screen homepagina van https://www.southparkstudios.com/">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/shopscreenshot.jpg" width="300px" alt="small-screen shoppagina van https://www.southparkstudios.com/">
+<img class="readme" src="images/shopscreenshot.jpg" alt="small-screen shoppagina van https://www.southparkstudios.com/">
 
