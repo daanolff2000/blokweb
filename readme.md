@@ -31,11 +31,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 2 (week 5)
 
 ### Stand van zaken
-- Ik heb gebruik gemaakt van een aantal divs voor de timestamps van een video. Is dit oke in verband met de semantiek?
+Ik heb gebruik gemaakt van een aantal divs voor de timestamps van een video. Is dit oke in verband met de semantiek?
 Ik weet namelijk niet welk ander blokelement hier beter kan worden toegepast.
 
 Nu moet de footer worden afgemaakt en het grid worden geplaatst.
-Bovendien moet ik de tweede pagina verder uitwerken. -
+Bovendien moet ik de tweede pagina verder uitwerken.
 
 **Screenshot(s):**
 
