@@ -31,6 +31,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 2 (week 5)
 
 ### Stand van zaken
+
 Ik heb gebruik gemaakt van een aantal divs voor de timestamps van een video. Is dit oke in verband met de semantiek?
 Ik weet namelijk niet welk ander blokelement hier beter kan worden toegepast.
 
@@ -40,14 +41,21 @@ Bovendien moet ik de tweede pagina verder uitwerken.
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+
 <img class="readme" width="300px" src="images/sc1vg2.png">
+
 Homepage
+
 <img class="readme" width="300px" src="images/sc2vg2.png">
+
 Navigatie
+
 <img class="readme" width="300px" src="images/sc3vg2.png">
+
 Footer
 
 **Feedback:**
+
 -feedback van de docent:-
 
 ## Voortgang 1 (week 3)
@@ -59,9 +67,13 @@ Het zoeken naar oplossingen gaat goed. Ik moet wel meer de vaart erin gooien.
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+
 <img class="readme" width="300px" src="images/ss1vg.jpg">
+
 Homepage
+
 <img class="readme" width="300px" src="images/ss2vg.jpg">
+
 Hamburgermenu
 
 ### Agenda voor meeting
