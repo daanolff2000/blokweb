@@ -35,6 +35,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Ik heb gebruik gemaakt van een aantal divs voor de timestamps van een video. Is dit oke in verband met de semantiek?
 Ik weet namelijk niet welk ander blokelement hier beter kan worden toegepast.
 
+Daarnaast: is if/else een goede manier om hamburgermenu en search functie elkaar niet te laten overlappen? 
+Dus dat er slechts één van deze twee elementen actief is?
+
 Nu moet de footer worden afgemaakt en het grid worden geplaatst.
 Bovendien moet ik de tweede pagina verder uitwerken.
 
