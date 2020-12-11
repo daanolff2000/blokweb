@@ -190,7 +190,7 @@ time.datum{
 }
 
 img.video, img.nieuws, img.collectie-cover{
-	max-width: 100%;
+	width: 100%;
 }
 
 img.collectie-cover{
