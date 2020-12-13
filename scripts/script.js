@@ -1,11 +1,8 @@
 // JavaScript Document
-var hamburgerKnop = document.querySelector('#hamburgerknop');
-var navigatie = document.querySelector('#navigatie');
-var section = document.querySelector('section');
+var hamburger = document.querySelector('#hamburger');
 
-hamburgerKnop.addEventListener('click', uitklappen);
-
-function uitklappen() {
+function maakActief() {
 	document.body.classList.toggle ('actief');
 }
 
+hamburger.addEventListener('click', maakActief);
