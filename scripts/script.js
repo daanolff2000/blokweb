@@ -1,8 +1,7 @@
 // JavaScript Document
 var hamburger = document.querySelector('#hamburger');
-
 var poster = document.querySelector('.poster');
-var video = document.querySelector('video');
+var video = document.querySelector('.video');
 var timestamp = document.querySelector('.timestamp-container');
 
 function maakActief() {

@@ -233,8 +233,6 @@ img, video{
 	display: none;
 }
 
-/* -------------------------*/
-
 img.collectie-cover{
 	filter: brightness(70%);
 }
