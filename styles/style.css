@@ -239,7 +239,7 @@ img.collectie-cover{
 	filter: brightness(70%);
 }
 
-img#collectie-icoon{
+img.collectie-icoon{
 	width: 6vw;
 	position: absolute;
 	left: 8%;
