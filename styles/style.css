@@ -225,9 +225,15 @@ time.datum{
 	padding-left: 2em;
 }
 
-img.video, img.nieuws, img.collectie-cover{
+img, video{
 	width: 100%;
 }
+
+.hidden{
+	display: none;
+}
+
+/* -------------------------*/
 
 img.collectie-cover{
 	filter: brightness(70%);
@@ -255,6 +261,10 @@ div.timestamp-container{
 	padding: 1vw;
 	bottom: 10%;
 	right: 3%;
+}
+
+div.timestamp-container.hidden{
+	visibility: hidden;
 }
 
 img.playicon {
