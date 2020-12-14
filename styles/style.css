@@ -365,6 +365,15 @@ ul#footerlist li{
 	nav ul#navlist li a.pagina{
 		padding: 0;
 	}
+	ul#navlist li a:hover{
+		background-color: transparent;
+		color: #828bdb;
+		transition: 0.25s;
+	}
+
+	body.actief section {
+		filter: brightness(100%);
+	}
 
 	/* Artikel in een grid */
 	.afleveringen{
