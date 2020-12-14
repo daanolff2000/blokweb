@@ -98,7 +98,7 @@ ul#navlist li{
 }
 
 /* Alle list-items behalve de bovenste hebben een border */
-nav li + li{
+nav ul#navlist li + li{
 	border-top: 1px solid white;
 }
 
@@ -303,9 +303,70 @@ ul#footerlist li{
 }
 
 
+
 /* ------- BREAKPOINT 1 ------- */
 
-@media (min-width: 40em) {
+@media (min-width: 42.5em) {
+	
+	/* Navigatie niet meer als hamburger */
+	button#hamburger{
+		display: none;
+	}
+
+	header{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		height: 7em;
+		padding-top: 0.6em;
+	}
+	
+	h1{
+		grid-column: 1/5;
+		grid-row: 1/2;
+		justify-self: center;
+	}
+	
+	button#zoek{
+		grid-column: 4/5;
+		grid-row: 1/2;
+		position: absolute;
+		justify-self: right;
+		align-self: center;
+	}
+	
+	nav{
+		grid-column: 1/-1;
+		grid-row: 2/3;
+		align-self: center;
+		position: static;
+		transform: translateX(0);
+	}
+	
+	ul#navlist{
+		display: flex;
+		width: 100%;
+		list-style: none;
+	}
+	
+	ul#navlist li{
+		width: 12.5%;
+		text-align: center;
+		font-size: 1em;
+		font-weight: 700;
+		text-transform: none;
+		background-color: transparent;
+	}
+	
+	nav ul#navlist li + li{
+		border-top: none;
+	}
+	
+	nav ul#navlist li a.pagina{
+		padding: 0;
+	}
+
+	/* Artikel in een grid */
 	.afleveringen{
 		width: 42.5vw;
 		margin-bottom: 2em;
@@ -313,9 +374,9 @@ ul#footerlist li{
 
 	#fullepisodes{
 		display: grid;
-		padding: 0 5vw;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 1em;
+		padding: 0 5vw;
 	}
 
 	#fullepisodes h2{
@@ -342,6 +403,7 @@ ul#footerlist li{
 		font-size: 2.7em;
 	}
 
+	/* Timestamp niet te groot */
 	div.timestamp-container{
 		width: 6vw;
 		padding: 0.5vw;
