@@ -1,29 +1,22 @@
 // JavaScript Document
 var hamburger = document.querySelector('#hamburger');
-var poster = document.querySelector('.poster');
-var video = document.querySelector('.video');
-var timestamp = document.querySelector('.timestamp-container');
+var mediacontainer = document.querySelectorAll(".media-wrapper");
+var videos = document.querySelectorAll('video');
 
 function maakActief() {
 	document.body.classList.toggle ('actief');
 }
 
-function playVideo() {
-	poster.classList.add('hidden');
-	video.classList.remove('hidden');
-	video.play();
-	video.loop = true;
-	timestamp.classList.add('hidden');
-}
-
-function videoReset() {
-	poster.classList.remove('hidden');
-	video.classList.add('hidden');
-	video.pause();
-	video.currentTime = 0;
-	timestamp.classList.remove('hidden');
-}
+[].forEach.call(videos, function (video){
+	video.addEventListener('mouseover', function(){
+		video.play();
+		video.classList.remove('hidden');
+	})
+	video.addEventListener('mouseout', function(){
+		video.pause();
+		video.currentTime = 0;
+		video.classList.add('hidden');
+	})
+});
 
 hamburger.addEventListener('click', maakActief);
-poster.addEventListener('mouseover', playVideo);
-video.addEventListener('mouseout', videoReset);

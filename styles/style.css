@@ -27,7 +27,7 @@ header{
 	background-color: #181818;
 	position: sticky;
 	top: 0;
-	z-index: 10;
+	z-index: 20;
 	display: flex;
 	justify-content: space-between;
 	height: 4em;
@@ -73,13 +73,13 @@ body.actief .fa-times{
 nav{
 	color: #ffffff;
 	position: fixed;
-	z-index: 10;
+	z-index: 20;
 	transform: translateX(-100vw);
 	top: 4em;
 	transition: .4s ease-out;
 }
 
-/* Plaatst de navigatie terug in het scherm na aanroepen JavaScript*/
+/* Plaatst de navigatie terug in het scherm na aanroepen JavaScript */
 body.actief nav{
 	transform: translateX(0);		
 	transition: .4s ease-in;
@@ -229,10 +229,7 @@ img, video{
 	width: 100%;
 }
 
-.hidden{
-	display: none;
-}
-
+/* Om tekst leesbaar te maken */
 img.collectie-cover{
 	filter: brightness(70%);
 }
@@ -247,6 +244,16 @@ img.collectie-icoon{
 div.media-wrapper{
 	position: relative;
 	max-width: 100%;
+}
+
+video{
+	position: absolute;
+	left: 0;
+	z-index: 5;
+}
+
+.hidden{
+	opacity: 0.01;
 }
 
 div.timestamp-container{
@@ -305,9 +312,68 @@ ul#footerlist li{
 
 
 /* ------- BREAKPOINT 1 ------- */
+@media (min-width: 37em) {
+	/* Een grid */
+	#fullepisodes{
+		display: grid;
+		grid-template-areas:
+		"header header"
+		"artikel1 artikel2"
+		"artikel3 artikel4";
+		grid-column-gap: 1em;
+		padding: 0 5vw;
+	}
 
-@media (min-width: 42.5em) {
+	.afleveringen{
+		width: 100%;
+		margin-bottom: 2em;
+	}
+
+	#fullepisodes h2{
+		grid-area: header;
+	}
+
+	#aflevering1{
+		grid-area: artikel1;
+	}
+	#aflevering2{
+		grid-area: artikel2;
+	}
+	#aflevering3{
+		grid-area: artikel3;
+	}
+	#aflevering4{
+		grid-area: artikel4;
+	}
 	
+	h2{
+		font-size: 2.7em;
+	}
+
+	/* Timestamp niet te groot */
+	div.timestamp-container{
+		width: 6vw;
+		padding: 0.5vw;
+	}
+
+	img.playicon {
+		width: 1vw;
+	}
+
+	time.timestamp{
+		font-size: 1.5vw;
+	}
+}
+
+/*  */
+@media (min-width: 50em) {
+	#fullepisodes{
+		grid-template-areas:
+		"header header header"
+		"artikel1 artikel1 artikel1"
+		"artikel2 artikel3 artikel4";
+	}
+
 	/* Navigatie niet meer als hamburger */
 	button#hamburger{
 		display: none;
@@ -374,55 +440,98 @@ ul#footerlist li{
 	body.actief section {
 		filter: brightness(100%);
 	}
+}
 
-	/* Artikel in een grid */
-	.afleveringen{
-		width: 42.5vw;
-		margin-bottom: 2em;
+@media (min-width: 60em) {
+	#fullepisodes{
+		grid-template-areas:
+		"header header header header"
+		"artikel1 artikel2 artikel3 artikel4"
 	}
 
-	#fullepisodes{
+	#collecties{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"header2 header2"
+		"thanksgiving winterwonderland";
 		grid-column-gap: 1em;
 		padding: 0 5vw;
 	}
 
-	#fullepisodes h2{
-		grid-column: 1/-1;
+	.collectie, .nieuwsartikel{
+		width: 100%;
 	}
 
-	#aflevering1{
-		grid-column: 1/2;
+	#collecties h2{
+		grid-area: header2;
 	}
 
-	#aflevering2{
-		grid-column: 2/3;
+	#happythanksgiving{
+		grid-area: thanksgiving;
 	}
 
-	#aflevering3{
-		grid-column: 1/2;
+	#winterwonderland{
+		grid-area: winterwonderland;
 	}
 
-	#aflevering4{
-		grid-column: 2/3;
-	}
-	
-	h2{
-		font-size: 2.7em;
-	}
-
-	/* Timestamp niet te groot */
-	div.timestamp-container{
-		width: 6vw;
-		padding: 0.5vw;
+	/* vw ipv em voor het schalen*/
+	h3.collectie-titel{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 900;
+		font-size: 3vw;
+		color: #ffffff;
+		position: absolute;
+		padding: 0;
+		left: 7%;
+		bottom: 1%;
 	}
 
-	img.playicon {
-		width: 1vw;
-	}
-
-	time.timestamp{
+	p.collectie-tekst{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
 		font-size: 1.5vw;
+		color: #ffffff;
+		position: absolute;
+		left: 3.2%;
+		top: 90%;
 	}
+
+	/* Om tekst leesbaar te maken */
+	img.collectie-cover{
+		filter: brightness(70%);
+	}	
+
+	img.collectie-icoon{
+		width: 6vw;
+		position: absolute;
+		left: 8%;
+		bottom: 30%;
+	}
+
+	#news{
+		display: grid;
+		grid-template-areas:
+		"header3 header3 header3 header3"
+		"pandemic coloring event character";
+		grid-column-gap: 1em;
+		padding: 0 5vw;
+	}
+
+	#news h2{
+		grid-area: header3;
+	}
+
+	.pandemie{
+		grid-area: pandemic;
+	}
+	.kleuren{
+		grid-area: coloring;
+	}
+	.event{
+		grid-area: event;
+	}
+	.kiezen{
+		grid-area: character;
+	}
+
 }

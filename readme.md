@@ -9,6 +9,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1. https://zellwk.com/blog/how-to-write-mobile-first-css/
 2. https://clideo.com/
 3. https://zellwk.com/blog/media-query-units/
+4. https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
 
 
@@ -18,13 +20,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+<img class="readme" width="300px" src="images/sc1vg3.png">
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik ben begonnen met het toepassen van verschillende breakpoints. Voor de rest moet ik nog een vraag stellen
+over mijn Javascript.
+
+Deze les hebben we vooral gekeken naar voorbeelden en hebben we tips gekregen voor in ons eigen ontwerp.
+Daarnaast stelde ik nog de vraag hoe ik mijn JavaScript op alle video's kon toepassen.
+Dat kan via een forEach of een loop. Ik ben gelijk gaan kijken op het internet wat de meest toegankelijke 
+manier was om dit te doen (voor de gebruiker). Ik heb dit vervolgens laten rusten om verder mee te gaan in de vakantie.
 
 
 
