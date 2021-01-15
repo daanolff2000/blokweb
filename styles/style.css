@@ -1,4 +1,8 @@
 /* ------- CSS DOCUMENT ------- */
+@font-face {
+	font-family: "AhaWow";
+	src: url("../fonts/AhaWow.ttf");
+}
 
 /* Breedte en hoogte van element zijn inclusief border en padding */
 *, *::after, *::before {
@@ -112,14 +116,16 @@ a.pagina{
 
 /* De elementen in de main worden flexibel in verticale richting */
 main {
-	display: flex;				
-	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 
 section{
 	background-color: #ffffff;
+	width: 85vw;
 	position: relative;
-	max-width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -132,17 +138,17 @@ body.actief section {
 	transition: .4s ease-in-out;
 }
 
-section h2{
+h2{
 	margin: 1em auto 0.6em;
 }
 
 article{
 	position: relative;
+	width: 100%;
+	margin-bottom: 2em;
 	background-color: #f8f8f8;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-	width: 85vw;
 	text-align: left;
-	margin-bottom: 1.5em;
 }
 
 article.afleveringen, article.nieuwsartikel {
@@ -310,23 +316,79 @@ ul#footerlist li{
 }
 
 
+/* ------- SHOP PAGINA ------- */
+#categorieen{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"headershop headershop"
+	"tees sweats"
+	"drinkware accessoires";
+	grid-column-gap: 1em;
+}
 
-/* ------- BREAKPOINT 1 ------- */
+#categorieen h2{
+	grid-area: headershop;
+}
+
+#shirts{
+	background-color: #fffc00;
+	grid-area: tees;
+}
+#truien{
+	background-color: #03c1fd;
+	grid-area: sweats;
+}
+#drinkware{
+	background-color: #40f700;
+	grid-area: drinkware;
+}
+#accessoires{
+	background-color: #f21c1d;
+	grid-area: accessoires;
+}
+
+#categorieen article{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+section#categorieen article h3{
+	font-family: 'AhaWow', 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	background-color: #ffffff;
+	width: 90%;
+	padding: 0;
+}
+
+section#karakters{
+	width: 100vw;
+	padding: 0;
+}
+
+section#karakters article{
+	background-image: url('../images/town.jpg');
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* ------- BREAKPOINTS ------- */
+/* BREAKPOINT 1 */
 @media (min-width: 37em) {
 	/* Een grid */
 	#fullepisodes{
 		display: grid;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas:
 		"header header"
 		"artikel1 artikel2"
 		"artikel3 artikel4";
 		grid-column-gap: 1em;
 		padding: 0 5vw;
-	}
-
-	.afleveringen{
-		width: 100%;
-		margin-bottom: 2em;
 	}
 
 	#fullepisodes h2{
@@ -365,9 +427,10 @@ ul#footerlist li{
 	}
 }
 
-/*  */
+/* BREAKPOINT 2 */
 @media (min-width: 50em) {
 	#fullepisodes{
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas:
 		"header header header"
 		"artikel1 artikel1 artikel1"
@@ -431,6 +494,7 @@ ul#footerlist li{
 	nav ul#navlist li a.pagina{
 		padding: 0;
 	}
+
 	ul#navlist li a:hover{
 		background-color: transparent;
 		color: #828bdb;
@@ -442,8 +506,11 @@ ul#footerlist li{
 	}
 }
 
+
+/* BREAKPOINT 3 */
 @media (min-width: 60em) {
 	#fullepisodes{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 		"header header header header"
 		"artikel1 artikel2 artikel3 artikel4"
@@ -451,15 +518,12 @@ ul#footerlist li{
 
 	#collecties{
 		display: grid;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas:
 		"header2 header2"
 		"thanksgiving winterwonderland";
 		grid-column-gap: 1em;
 		padding: 0 5vw;
-	}
-
-	.collectie, .nieuwsartikel{
-		width: 100%;
 	}
 
 	#collecties h2{
@@ -469,7 +533,6 @@ ul#footerlist li{
 	#happythanksgiving{
 		grid-area: thanksgiving;
 	}
-
 	#winterwonderland{
 		grid-area: winterwonderland;
 	}
@@ -510,6 +573,7 @@ ul#footerlist li{
 
 	#news{
 		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 		"header3 header3 header3 header3"
 		"pandemic coloring event character";
@@ -534,4 +598,28 @@ ul#footerlist li{
 		grid-area: character;
 	}
 
+	/* Timestamp niet te groot */
+	div.timestamp-container{
+		width: 3vw;
+		padding: 0.4vw;
+	}
+
+	img.playicon {
+		width: 0.5vw;
+	}
+
+	time.timestamp{
+		font-size: 0.6vw;
+	}
+}
+
+/* BREAKPOINT 1 shop pagina*/
+@media (min-width: 70em) {
+	#categorieen{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"headershop headershop headershop headershop"
+		"tees sweats drinkware accessoires";
+		grid-column-gap: 2em;
+	}
 }
